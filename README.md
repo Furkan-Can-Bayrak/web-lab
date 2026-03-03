@@ -26,8 +26,8 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
 
 1. **Repoyu klonlayın:**
    ```bash
-   git clone https://github.com/SametAltuner/web-lab-1.git
-   cd web-lab-1
+   git clone https://github.com/Furkan-Can-Bayrak/web-lab.git
+   cd web-lab
    ```
 
 2. **Bağımlılıkları yükleyin:**
@@ -60,7 +60,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
 
 - **Ad Soyad:** Furkan Can BAYRAK
 - **Bölüm:** Yazılım Mühendisliği
-- **Öğrenci No:** 235541090
+- **Öğrenci No:** 225542016
 
 ---
 *Bu proje eğitim amaçlı geliştirilmiştir.*
