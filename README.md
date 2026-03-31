@@ -23,7 +23,11 @@ Uygulama iki ana gorunum sunar:
 
   npm run dev
 
-3. Tarayicida acin:
+1. **Repoyu klonlayın:**
+   ```bash
+   git clone https://github.com/Furkan-Can-Bayrak/web-lab.git
+   cd web-lab
+   ```
 
   http://localhost:5173
 
@@ -39,7 +43,9 @@ Uygulama iki ana gorunum sunar:
 - Onizleme: npm run preview
 - Lint: npm run lint
 
-## Teknolojiler
+- **Ad Soyad:** Furkan Can BAYRAK
+- **Bölüm:** Yazılım Mühendisliği
+- **Öğrenci No:** 225542016
 
 - React
 - TypeScript
