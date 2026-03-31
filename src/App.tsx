@@ -1,9 +1,22 @@
 import Button from './components/Button'
 import Card from './components/Card'
 import Input from './components/Input'
-import './App.css'
+import UIKit from './pages/UIKit'
 
-function App() {
+function ThemeToggle() {
+  return (
+    <button
+      onClick={() => document.documentElement.classList.toggle('dark')}
+      className="fixed top-4 right-4 z-50 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
+      aria-label="Tema degistir"
+    >
+      <span className="dark:hidden">&#9790;</span>
+      <span className="hidden dark:inline">&#9728;</span>
+    </button>
+  )
+}
+
+function PortfolioPage() {
   return (
     <>
       {/* Skip link */}
@@ -14,15 +27,7 @@ function App() {
         Ana icerige atla
       </a>
 
-      {/* Dark mode toggle */}
-      <button
-        onClick={() => document.documentElement.classList.toggle('dark')}
-        className="fixed top-4 right-4 z-50 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
-        aria-label="Tema degistir"
-      >
-        <span className="dark:hidden">&#9790;</span>
-        <span className="hidden dark:inline">&#9728;</span>
-      </button>
+      <ThemeToggle />
 
       {/* Header */}
       <header className="sticky top-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
@@ -54,6 +59,14 @@ function App() {
                   className="px-3 py-1 rounded-md text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-800 transition-colors"
                 >
                   Iletisim
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/uikit"
+                  className="px-3 py-1 rounded-md text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-800 transition-colors"
+                >
+                  UI Kit
                 </a>
               </li>
             </ul>
@@ -233,6 +246,29 @@ function App() {
       </footer>
     </>
   )
+}
+
+function App() {
+  const isUIKitPath = window.location.pathname === '/uikit'
+
+  if (isUIKitPath) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
+        <ThemeToggle />
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <a
+            href="/"
+            className="inline-flex items-center text-sm font-medium text-blue-700 dark:text-blue-300 hover:underline"
+          >
+            ← Portfolyoya don
+          </a>
+        </div>
+        <UIKit />
+      </div>
+    )
+  }
+
+  return <PortfolioPage />
 }
 
 export default App
