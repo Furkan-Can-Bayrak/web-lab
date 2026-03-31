@@ -1,28 +1,27 @@
-# Web Tasarımı ve Programlama - LAB 1
+# Web Lab
 
-Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında geliştirilen ilk laboratuvar çalışmasıdır. Modern web teknolojileri kullanılarak oluşturulmuş basit bir React uygulamasıdır.
+Bu proje, Vite + React + TypeScript ile gelistirilmis portfolyo uygulamasidir.
+Uygulama iki ana gorunum sunar:
 
-## 🚀 Proje Hakkında
+- Portfolyo sayfasi: hakkimda, projeler ve iletisim bolumleri
+- UI Kit sayfasi: Button, Input, Card ve Alert bilesenlerinin ornek kullanimlari
 
-Bu uygulama, öğrenci bilgilerini (Ad, Soyad, Numara, Bölüm) ekrana yazdıran ve Vite ile oluşturulmuş, TypeScript tabanlı bir React projesidir.
+## Ozellikler
 
-**Temel Özellikler:**
-- Hızlı geliştirme ortamı (Vite)
-- Tip güvenliği (TypeScript)
-- Modern React yapısı (Hooks, Functional Components)
+- React 19 ve TypeScript ile modern bilesen yapisi
+- Tailwind CSS (v4) ile hizli ve responsive stillendirme
+- Dark mode ac/kapa butonu
+- Erisilebilirlik odakli temel detaylar (skip-link, form etiketleri, alert rolleri)
 
-## 🛠 Kullanılan Teknolojiler
+## Kurulum
 
-Proje geliştirilirken aşağıdaki teknolojiler kullanılmıştır:
+1. Bagimliliklari yukleyin:
 
-- **React** (v19) - Kullanıcı arayüzü kütüphanesi
-- **TypeScript** - Tip güvenli JavaScript
-- **Vite** - Hızlı build aracı ve geliştirme sunucusu
-- **ESLint** - Kod kalitesi ve düzeni için
+  npm install
 
-## 📦 Kurulum ve Çalıştırma
+2. Gelistirme sunucusunu baslatin:
 
-Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+  npm run dev
 
 1. **Repoyu klonlayın:**
    ```bash
@@ -30,37 +29,26 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
    cd web-lab
    ```
 
-2. **Bağımlılıkları yükleyin:**
-   ```bash
-   npm install
-   ```
+  http://localhost:5173
 
-3. **Geliştirme sunucusunu başlatın:**
-   ```bash
-   npm run dev
-   ```
-   Komut çalıştıktan sonra terminalde belirtilen adrese (genellikle `http://localhost:5173`) giderek projeyi görüntüleyebilirsiniz.
+## Sayfa Yollari
 
-## 📝 Diğer Komutlar
+- Portfolyo: /
+- UI Kit: /uikit
 
-- **Projenin derlenmesi (Build):**
-  ```bash
-  npm run build
-  ```
-- **Önizleme (Preview):**
-  ```bash
-  npm run preview
-  ```
-- **Lint (Kod Denetimi):**
-  ```bash
-  npm run lint
-  ```
+## Komutlar
 
-## 👨‍💻 Geliştirici
+- Gelistirme: npm run dev
+- Build: npm run build
+- Onizleme: npm run preview
+- Lint: npm run lint
 
 - **Ad Soyad:** Furkan Can BAYRAK
 - **Bölüm:** Yazılım Mühendisliği
 - **Öğrenci No:** 225542016
 
----
-*Bu proje eğitim amaçlı geliştirilmiştir.*
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- ESLint
