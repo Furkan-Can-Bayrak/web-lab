@@ -14,7 +14,7 @@ const items = [
     org: { tr: 'Web Developer', en: 'Web Developer' },
   },
   {
-    period: { tr: 'Mart 2025 - Şubat 2026 (11 ay)', en: 'Mart 2025 - Şubat 2026 (11 ay)' },
+    period: { tr: 'Mart 2025 - Nisan 2026 (11 ay)', en: 'Mart 2025 - Nisan 2026 (11 ay)' },
     title: { tr: 'Prodrom ICT Solutions', en: 'Prodrom ICT Solutions' },
     desc: {
       tr: 'Laravel tabanlı projelerde backend ağırlıklı geliştirme, Service-Repository mimarisi, yetkilendirme ve iş kuralları odaklı modüller ile refactor/performance iyileştirmeleri geliştirdim.',

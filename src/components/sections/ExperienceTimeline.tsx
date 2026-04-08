@@ -14,7 +14,7 @@ const items = [
     progress: 100,
   },
   {
-    period: { tr: 'Mart 2025 - Şubat 2026', en: 'Mart 2025 - Şubat 2026' },
+    period: { tr: 'Mart 2025 - Nisan 2026', en: 'Mart 2025 - Nisan 2026' },
     title: { tr: 'Prodrom ICT Solutions - Full Stack Developer', en: 'Prodrom ICT Solutions - Full Stack Developer' },
     desc: {
       tr: 'Laravel tabanlı kurumsal projelerde backend odaklı geliştirme, Service-Repository mimarisi, yetkilendirme ve performans iyileştirme süreçlerini yürüttüm.',
