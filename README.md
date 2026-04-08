@@ -1,48 +1,101 @@
-# Web Lab
+# React + TypeScript + Vite
 
-Bu proje, Vite + React + TypeScript ile gelistirilmis portfolyo uygulamasidir.
-Uygulama iki ana gorunum sunar:
-
-- Portfolyo sayfasi: hakkimda, projeler ve iletisim bolumleri
-- UI Kit sayfasi: Button, Input, Card ve Alert bilesenlerinin ornek kullanimlari
-
-## Ozellikler
-
-- React 19 ve TypeScript ile modern bilesen yapisi
-- Tailwind CSS (v4) ile hizli ve responsive stillendirme
-- Dark mode ac/kapa butonu
-- Erisilebilirlik odakli temel detaylar (skip-link, form etiketleri, alert rolleri)
+Bu proje React, TypeScript ve Vite ile oluşturulmuştur. HMR (Hot Module Replacement) ve temel ESLint kurallarıyla minimal bir kurulum sunar.
 
 ## Kurulum
 
-1. Bagimliliklari yukleyin:
+Projeyi bilgisayarınıza klonladıktan sonra bağımlılıkları yükleyin:
 
-  npm install
+```bash
+npm install
+```
 
-2. Gelistirme sunucusunu baslatin:
+## Çalıştırma
 
-  npm run dev
+Geliştirme sunucusunu başlatmak için:
 
-3. Tarayicida acin:
+```bash
+npm run dev
+```
 
-  http://localhost:5173
+Uygulama varsayılan olarak [http://localhost:5173](http://localhost:5173) adresinde açılacaktır.
 
-## Sayfa Yollari
+## Projeyi Derleme
 
-- Portfolyo: /
-- UI Kit: /uikit
+Üretim için derlemek isterseniz:
 
-## Komutlar
+```bash
+npm run build
+```
 
-- Gelistirme: npm run dev
-- Build: npm run build
-- Onizleme: npm run preview
-- Lint: npm run lint
+## Mevcut Eklentiler
 
-## Teknolojiler
+Bu şablonda kullanılabilecek iki resmi eklenti bulunmaktadır:
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- ESLint
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) – Fast Refresh için [Babel](https://babeljs.io/) kullanır
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) – Fast Refresh için [SWC](https://swc.rs/) kullanır
+
+## React Compiler
+
+React Compiler bu şablonda devre dışıdır; geliştirme ve derleme performansını etkileyebileceği için. Eklemek isterseniz [bu dokümantasyona](https://react.dev/learn/react-compiler/installation) bakın.
+
+## ESLint Yapılandırmasını Genişletme
+
+Üretim uygulaması geliştiriyorsanız, tip duyarlı lint kurallarını etkinleştirmek için yapılandırmayı güncellemeniz önerilir:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Diğer configler...
+
+      // tseslint.configs.recommended kaldırın ve yerine bunu ekleyin
+      tseslint.configs.recommendedTypeChecked,
+      // Veya daha katı kurallar için
+      tseslint.configs.strictTypeChecked,
+      // İsteğe bağlı: stil kuralları için
+      tseslint.configs.stylisticTypeChecked,
+
+      // Diğer configler...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // diğer seçenekler...
+    },
+  },
+])
+```
+
+React'e özel lint kuralları için [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) ve [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) eklentilerini de kurabilirsiniz:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Diğer configler...
+      // React lint kurallarını etkinleştir
+      reactX.configs['recommended-typescript'],
+      // React DOM lint kurallarını etkinleştir
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // diğer seçenekler...
+    },
+  },
+])
+```

@@ -1,32 +1,30 @@
-@import "./styles/tokens.css";
 @import "tailwindcss";
-
-@theme {
-  --color-primary: #646cff;
-  --color-secondary: #535bf2;
-  --color-accent: #9299ff;
-  --color-surface: rgba(255, 255, 255, 0.05);
-  --color-muted: #94a3b8;
-  --color-error: #d32f2f;
-  --color-success: #16a34a;
-
-  --font-family-sans: system-ui, -apple-system, sans-serif;
-  --font-family-mono: 'Fira Code', 'Consolas', monospace;
-}
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-html {
-  scroll-behavior: smooth;
+@theme {
+  --color-primary: oklch(58% 0.21 278);
+  --color-secondary: oklch(62% 0.17 250);
+  --color-accent: oklch(70% 0.16 308);
+  --color-surface: oklch(98% 0.01 260);
+  --color-muted: oklch(55% 0.03 260);
+  --color-error: oklch(60% 0.22 26);
+  --color-success: oklch(65% 0.16 145);
+
+  --font-family-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-family-mono: "Fira Code", "Consolas", monospace;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-sans);
-}
-
-html:not(.dark) body {
-  background-color: #ffffff;
-  color: #213547;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-family-sans);
 }
