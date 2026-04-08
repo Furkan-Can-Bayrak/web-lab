@@ -15,7 +15,7 @@ const items = [
   },
   {
     period: { tr: 'Mart 2025 - Şubat 2026', en: 'Mart 2025 - Şubat 2026' },
-    title: { tr: 'Dromor ICT Solutions - Full Stack Developer', en: 'Dromor ICT Solutions - Full Stack Developer' },
+    title: { tr: 'Prodrom ICT Solutions - Full Stack Developer', en: 'Prodrom ICT Solutions - Full Stack Developer' },
     desc: {
       tr: 'Laravel tabanlı kurumsal projelerde backend odaklı geliştirme, Service-Repository mimarisi, yetkilendirme ve performans iyileştirme süreçlerini yürüttüm.',
       en: 'Laravel tabanlı kurumsal projelerde backend odaklı geliştirme, Service-Repository mimarisi, yetkilendirme ve performans iyileştirme süreçlerini yürüttüm.',

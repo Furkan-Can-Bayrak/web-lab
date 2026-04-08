@@ -15,7 +15,7 @@ const items = [
   },
   {
     period: { tr: 'Mart 2025 - Şubat 2026 (11 ay)', en: 'Mart 2025 - Şubat 2026 (11 ay)' },
-    title: { tr: 'Dromor ICT Solutions', en: 'Dromor ICT Solutions' },
+    title: { tr: 'Prodrom ICT Solutions', en: 'Prodrom ICT Solutions' },
     desc: {
       tr: 'Laravel tabanlı projelerde backend ağırlıklı geliştirme, Service-Repository mimarisi, yetkilendirme ve iş kuralları odaklı modüller ile refactor/performance iyileştirmeleri geliştirdim.',
       en: 'Laravel tabanlı projelerde backend ağırlıklı geliştirme, Service-Repository mimarisi, yetkilendirme ve iş kuralları odaklı modüller ile refactor/performance iyileştirmeleri geliştirdim.',
