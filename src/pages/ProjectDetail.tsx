@@ -1,5 +1,6 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { motion } from 'motion/react'
+import { ExternalLink } from 'lucide-react'
 import { projects } from '../data/projects'
 import { useLocale } from '../i18n/LocaleContext'
 import { useMemo, useState } from 'react'
@@ -38,9 +39,22 @@ export default function ProjectDetail() {
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
-      <Link to="/projects" className="inline-flex items-center text-sm font-medium text-violet-600">
-        ← {locale === 'tr' ? 'Tüm projelere dön' : 'Back to all projects'}
-      </Link>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <Link to="/projects" className="inline-flex items-center text-sm font-medium text-violet-600">
+          ← {locale === 'tr' ? 'Tüm projelere dön' : 'Back to all projects'}
+        </Link>
+
+        {project.links.demo && (
+          <a
+            href={project.links.demo}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg bg-cyan-600 px-4 py-2 text-sm font-medium text-white hover:bg-cyan-700"
+          >
+            {locale === 'tr' ? 'Canlıyı Aç' : 'Open Live Site'} <ExternalLink size={16} />
+          </a>
+        )}
+      </div>
 
       <motion.article
         initial={{ opacity: 0, y: 18 }}
@@ -88,6 +102,16 @@ export default function ProjectDetail() {
                 </button>
               ))}
             </div>
+          )}
+          {(project.slug === 'cybercortex' || project.slug === 'atanma-akademik-kadro') && (
+            <p className="-mt-2 text-[11px] text-slate-400 dark:text-slate-500">
+              Gorseller prodrom.com sayfasindan alinmistir.
+            </p>
+          )}
+          {project.slug === 'verial' && (
+            <p className="-mt-2 text-[11px] text-slate-400 dark:text-slate-500">
+              Gorseller https://dijitalalmanak.firat.edu.tr/detail/df10e6b7-7351-46f1-b88d-5fc25e8308c9 sitesinden alinmistir.
+            </p>
           )}
           <header>
             <h1 className="text-3xl font-bold text-slate-900 dark:text-white">{project.title[locale]}</h1>

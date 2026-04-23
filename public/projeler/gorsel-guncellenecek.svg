@@ -1,0 +1,53 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Proje Gorseli Guncellenecek</title>
+  <desc id="desc">Henüz proje gorseli eklenmedi. Bu alan daha sonra guncellenecek.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EAF7F2"/>
+      <stop offset="0.55" stop-color="#E9F2FF"/>
+      <stop offset="1" stop-color="#F9F1E7"/>
+    </linearGradient>
+    <linearGradient id="card" x1="320" y1="170" x2="880" y2="590" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.76"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="430" y1="350" x2="770" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="blur" x="-200" y="-200" width="1600" height="1200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+    <filter id="shadow" x="280" y="130" width="640" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0941176 0 0 0 0 0.164706 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#bg)"/>
+
+  <g filter="url(#blur)">
+    <circle cx="210" cy="160" r="130" fill="#7DD3FC" fill-opacity="0.55"/>
+    <circle cx="1020" cy="120" r="120" fill="#86EFAC" fill-opacity="0.5"/>
+    <circle cx="980" cy="640" r="150" fill="#FDBA74" fill-opacity="0.34"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="320" y="170" width="560" height="420" rx="28" fill="url(#card)"/>
+    <rect x="320.8" y="170.8" width="558.4" height="418.4" rx="27.2" stroke="#E2E8F0" stroke-width="1.6"/>
+  </g>
+
+  <rect x="360" y="210" width="138" height="36" rx="18" fill="#0F172A" fill-opacity="0.88"/>
+  <text x="429" y="234" text-anchor="middle" font-family="Verdana, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#F8FAFC">PLACEHOLDER</text>
+
+  <rect x="430" y="280" width="340" height="140" rx="20" fill="url(#accent)"/>
+  <path d="M558 342L600 304L642 342V392H610V360H590V392H558V342Z" fill="#FFFFFF" fill-opacity="0.92"/>
+  <circle cx="690" cy="314" r="16" fill="#FFFFFF" fill-opacity="0.88"/>
+  <path d="M674 378C674 360.327 688.327 346 706 346H738V392H674V378Z" fill="#FFFFFF" fill-opacity="0.88"/>
+
+  <text x="600" y="480" text-anchor="middle" font-family="Verdana, Segoe UI, sans-serif" font-size="34" font-weight="800" fill="#0F172A">Gorsel Guncellenecek</text>
+  <text x="600" y="515" text-anchor="middle" font-family="Verdana, Segoe UI, sans-serif" font-size="17" font-weight="500" fill="#475569">Bu proje icin ozel kapak gorseli daha sonra eklenecek.</text>
+</svg>
