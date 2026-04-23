@@ -4,12 +4,16 @@ import { Link } from 'react-router-dom'
 
 const awards = [
   {
-    title: { tr: 'CodeNight 1.lik (T3 Vakfı)', en: 'CodeNight 1st Place (T3 Foundation)' },
-    detail: { tr: 'AI Recipe Chatbot - Takım Kaptanı & Backend', en: 'AI Recipe Chatbot - Team Captain & Backend' },
+    title: { tr: 'CodeNight 1.lik (AgeSA)', en: 'CodeNight 1st Place (AgeSA)' },
+    detail: { tr: 'AgeSA City - Takım Kaptanı & Backend', en: 'AgeSA City - Team Captain & Backend' },
   },
   {
-    title: { tr: 'CodeNight 1.lik (AgeSA)', en: 'CodeNight 1st Place (AgeSA)' },
-    detail: { tr: 'AgeSA City - Frontend Developer', en: 'AgeSA City - Frontend Developer' },
+    title: { tr: 'CodeNight 1.lik (T3 Vakfı)', en: 'CodeNight 1st Place (T3 Foundation)' },
+    detail: { tr: 'AI Recipe Chatbot - Backend Developer', en: 'AI Recipe Chatbot - Backend Developer' },
+  },
+  {
+    title: { tr: 'CodeNight 3.lük (Huawei)', en: 'CodeNight 3rd Place (Huawei)' },
+    detail: { tr: 'fitlestik_kanka - Backend Developer', en: 'fitlestik_kanka - Backend Developer' },
   },
 ]
 

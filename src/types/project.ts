@@ -2,7 +2,7 @@ export type Category = 'mobile' | 'backend' | 'iot' | 'ai' | 'fullstack'
 export type Locale = 'tr' | 'en'
 export type LocalizedText = Record<Locale, string>
 
-export type SortField = 'title'
+export type SortField = 'order' | 'title'
 export type SortOrder = 'asc' | 'desc'
 
 export interface Project {

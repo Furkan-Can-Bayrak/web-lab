@@ -5,19 +5,27 @@ import { Link } from 'react-router-dom'
 const awards = [
   {
     rank: 'gold',
-    title: { tr: 'CodeNight 1.lik (T3 Vakfı)', en: 'CodeNight 1st Place (T3 Foundation)' },
-    detail: { tr: 'AI Recipe Chatbot - Takım Kaptanı & Backend', en: 'AI Recipe Chatbot - Team Captain & Backend' },
+    title: { tr: 'CodeNight 1.lik (AgeSA)', en: 'CodeNight 1st Place (AgeSA)' },
+    detail: { tr: 'AgeSA City - Takım Kaptanı & Backend', en: 'AgeSA City - Team Captain & Backend' },
     year: '2026',
     badges: ['Team Captain', 'Backend', 'Hackathon'],
-    link: '/projects/recipe-chatbot',
+    link: '/projects/agesa-city',
   },
   {
     rank: 'gold',
-    title: { tr: 'CodeNight 1.lik (AgeSA)', en: 'CodeNight 1st Place (AgeSA)' },
-    detail: { tr: 'AgeSA City - Frontend Developer', en: 'AgeSA City - Frontend Developer' },
+    title: { tr: 'CodeNight 1.lik (T3 Vakfı)', en: 'CodeNight 1st Place (T3 Foundation)' },
+    detail: { tr: 'AI Recipe Chatbot - Backend Developer', en: 'AI Recipe Chatbot - Backend Developer' },
     year: '2026',
-    badges: ['Frontend', 'Hackathon', 'Product UI'],
-    link: '/projects/agesa-city',
+    badges: ['Backend', 'Hackathon'],
+    link: '/projects/recipe-chatbot',
+  },
+  {
+    rank: 'bronze',
+    title: { tr: 'CodeNight 3.lük (Huawei)', en: 'CodeNight 3rd Place (Huawei)' },
+    detail: { tr: 'fitlestik_kanka - Backend Developer', en: 'fitlestik_kanka - Backend Developer' },
+    year: '2026',
+    badges: ['Backend', 'Hackathon'],
+    link: '/projects/fitlestik-kanka',
   },
 ]
 
@@ -28,13 +36,18 @@ export default function Awards() {
 
   const rankStyles: Record<string, string> = {
     gold: 'border-amber-300/90 dark:border-amber-600/70 bg-amber-50/70 dark:bg-amber-900/15',
+    bronze: 'border-orange-300/90 dark:border-orange-700/70 bg-orange-50/70 dark:bg-orange-900/15',
     finalist: 'border-slate-300/90 dark:border-slate-600/70 bg-slate-50/70 dark:bg-slate-900/25',
   }
 
   const rankLabel = (rank: string) =>
-    rank === 'gold' ? (locale === 'tr' ? 'Birincilik' : '1st Place') : locale === 'tr' ? 'Finalist' : 'Finalist'
+    rank === 'gold'
+      ? locale === 'tr' ? 'Birincilik' : '1st Place'
+      : rank === 'bronze'
+        ? locale === 'tr' ? 'Ucunculuk' : '3rd Place'
+        : locale === 'tr' ? 'Finalist' : 'Finalist'
 
-  const rankIcon = (rank: string) => (rank === 'gold' ? '🏆' : '🎖️')
+  const rankIcon = (rank: string) => (rank === 'gold' ? '🏆' : rank === 'bronze' ? '🥉' : '🎖️')
 
   return (
     <section className="max-w-6xl mx-auto px-4 py-10 space-y-7">

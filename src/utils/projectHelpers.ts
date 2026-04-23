@@ -28,6 +28,7 @@ export function sortProjects(
   locale: Locale,
 ): Project[] {
   const sorted = [...projects].sort((a, b) => {
+    if (field === 'order') return a.id - b.id
     if (field === 'title') return a.title[locale].localeCompare(b.title[locale], locale)
     return 0
   })

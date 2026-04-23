@@ -57,10 +57,12 @@ export default function Hero() {
               {locale === 'tr' ? 'Projeleri Keşfet' : 'Explore Projects'} <ArrowRight size={16} />
             </Link>
             <a
-              href="#contact"
+              href="/Furkan_Can_Bayrak_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition text-sm"
             >
-              {locale === 'tr' ? 'Benimle İletişime Geç' : 'Get In Touch'} <Download size={16} />
+              {locale === 'tr' ? 'CV (TR) Aç' : 'Open CV (TR)'} <Download size={16} />
             </a>
           </div>
 
