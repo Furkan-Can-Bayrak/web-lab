@@ -103,11 +103,6 @@ export default function ProjectDetail() {
               ))}
             </div>
           )}
-          {(project.slug === 'cybercortex' || project.slug === 'atanma-akademik-kadro') && (
-            <p className="-mt-2 text-[11px] text-slate-400 dark:text-slate-500">
-              Gorseller prodrom.com sayfasindan alinmistir.
-            </p>
-          )}
           {project.slug === 'verial' && (
             <p className="-mt-2 text-[11px] text-slate-400 dark:text-slate-500">
               Gorseller https://dijitalalmanak.firat.edu.tr/detail/df10e6b7-7351-46f1-b88d-5fc25e8308c9 sitesinden alinmistir.
@@ -178,7 +173,13 @@ export default function ProjectDetail() {
                   rel="noreferrer"
                   className="inline-flex items-center rounded-lg border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm"
                 >
-                  {locale === 'tr' ? 'Kaynak Kod' : 'Source Code'}
+                  {project.links.source.includes('prodrom.com/projeler/')
+                    ? locale === 'tr'
+                      ? 'Tanitim Sayfasi'
+                      : 'Project Page'
+                    : locale === 'tr'
+                      ? 'Kaynak Kod'
+                      : 'Source Code'}
                 </a>
               )}
             </section>

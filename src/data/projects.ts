@@ -40,7 +40,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 2,
+    id: 5,
     slug: 'laravel-starter-pack',
     title: { tr: 'Laravel Starter Pack - Clean Architecture Scaffold', en: 'Laravel Starter Pack - Clean Architecture Scaffold' },
     subtitle: {
@@ -71,11 +71,11 @@ export const projects: Project[] = [
     tech: ['Laravel'],
     category: 'backend',
     featured: false,
-    image: '/projeler/gorsel-guncellenecek.svg',
+     image: '/projeler/laravel-starter-pack/laravel-starter-pack-1.webp',
     links: {},
   },
   {
-    id: 3,
+    id: 6,
     slug: 'dreamind',
     title: { tr: 'Dreamind: AI Dream Interpreter - Mobil Uygulama Backend', en: 'Dreamind: AI Dream Interpreter - Mobil Uygulama Backend' },
     subtitle: {
@@ -109,11 +109,12 @@ export const projects: Project[] = [
     tech: ['FastAPI', 'Python', 'Flutter', 'AI API', 'Docker', 'VPS'],
     category: 'mobile',
     featured: true,
-    image: '/projeler/dreamind/dreamind.webp',
+    image: '/projeler/dreamind/dreamind-1.webp',
+    gallery: ['/projeler/dreamind/dreamind-2.webp'],
     links: { store: 'https://play.google.com/store/apps/details?id=com.ruyatabiri.ruya_tabiri_mobile' },
   },
   {
-    id: 4,
+    id: 2,
     slug: 'erasmusgate',
     title: { tr: 'ErasmusGate - Erasmus Surec Yonetim Sistemi', en: 'ErasmusGate - Erasmus Surec Yonetim Sistemi' },
     subtitle: {
@@ -150,29 +151,29 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 5,
+    id: 19,
     slug: 'cybercortex',
     title: { tr: 'CyberCortex - Guvenlik Acigi Analiz Platformu', en: 'CyberCortex - Guvenlik Acigi Analiz Platformu' },
     subtitle: {
-      tr: 'Kurum ici guvenlik analizi platformu arayuz gelistirme projesi',
-      en: 'Kurum ici guvenlik analizi platformu arayuz gelistirme projesi',
+      tr: 'Sirket ici siber guvenlik analiz platformu',
+      en: 'Internal cybersecurity analysis platform',
     },
     description: {
-      tr: 'Kurum ici kullanilan guvenlik analizi platformu icin kullanici arayuzleri gelistirdim. Blade tabanli tekrar eden bilesenlerle moduler bir frontend yapi olusturarak responsive ekranlar tasarladim.',
-      en: 'Kurum ici kullanilan guvenlik analizi platformu icin kullanici arayuzleri gelistirdim. Blade tabanli tekrar eden bilesenlerle moduler bir frontend yapi olusturarak responsive ekranlar tasarladim.',
+      tr: 'Sirket projesi oldugu icin teknik detay ve gorsel paylasimi sinirlidir. Tanitim sayfasi asagidadir.',
+      en: 'As this is a company project, technical details and visuals are limited. The project page is provided below.',
     },
     role: { tr: 'Frontend Developer', en: 'Frontend Developer' },
     problem: {
-      tr: 'Guvenlik analizi sonuclarini ekiplerin hizli okuyabilecegi ve yonetebilecegi bir arayuz ihtiyaci.',
-      en: 'Guvenlik analizi sonuclarini ekiplerin hizli okuyabilecegi ve yonetebilecegi bir arayuz ihtiyaci.',
+      tr: 'Analiz sonuclarinin ekipler tarafindan hizli takip edilmesi.',
+      en: 'Fast team-wide tracking of analysis results.',
     },
     architecture: {
-      tr: ['Blade bilesen mimarisi', 'HTML/CSS/JavaScript responsive ekranlar', 'Tekrar kullanilabilir UI katmani'],
-      en: ['Blade bilesen mimarisi', 'HTML/CSS/JavaScript responsive ekranlar', 'Tekrar kullanilabilir UI katmani'],
+      tr: ['Moduler arayuz gelistirme'],
+      en: ['Modular interface development'],
     },
     outcomes: {
-      tr: ['Erisilebilir ve responsive arayuzler gelistirildi', 'Tekrar eden ekranlar icin bilesen tabanli yapi kuruldu', 'Frontend bakimi kolaylasti'],
-      en: ['Erisilebilir ve responsive arayuzler gelistirildi', 'Tekrar eden ekranlar icin bilesen tabanli yapi kuruldu', 'Frontend bakimi kolaylasti'],
+      tr: ['Kullanici deneyimi ve surec gorunurlugu iyilestirildi'],
+      en: ['User experience and process visibility were improved'],
     },
     highlights: {
       tr: ['Blade', 'HTML', 'CSS', 'JavaScript'],
@@ -181,34 +182,35 @@ export const projects: Project[] = [
     tech: ['Blade', 'HTML', 'CSS', 'JavaScript'],
     category: 'fullstack',
     featured: false,
-    image: '/projeler/cybercortex/cybercortex-1.webp',
-    gallery: ['/projeler/cybercortex/cybercortex-2.webp', '/projeler/cybercortex/cybercortex-3.webp'],
-    links: {},
+    image: '/projeler/gorsel-guncellenecek.svg',
+    links: {
+      source: 'https://prodrom.com/projeler/cybercortex',
+    },
   },
   {
-    id: 6,
+    id: 20,
     slug: 'atanma-akademik-kadro',
     title: { tr: 'Atanma - Akademik Kadro Atama Sistemi', en: 'Atanma - Akademik Kadro Atama Sistemi' },
     subtitle: {
-      tr: 'Akademik kadro atama surecleri icin backend karar kurali sistemi',
-      en: 'Akademik kadro atama surecleri icin backend karar kurali sistemi',
+      tr: 'Sirket ici akademik kadro yonetim platformu',
+      en: 'Internal academic staffing platform',
     },
     description: {
-      tr: 'Akademik kadro atama sureclerine yonelik dinamik is kurallari gelistirdim. Admin panel uzerinden tanimlanan kriterlerle otomatik puan hesaplama ve YOK verileriyle karar destek modullerine katki sagladim.',
-      en: 'Akademik kadro atama sureclerine yonelik dinamik is kurallari gelistirdim. Admin panel uzerinden tanimlanan kriterlerle otomatik puan hesaplama ve YOK verileriyle karar destek modullerine katki sagladim.',
+      tr: 'Sirket projesi oldugu icin teknik detay ve gorsel paylasimi sinirlidir. Tanitim sayfasi asagidadir.',
+      en: 'As this is a company project, technical details and visuals are limited. The project page is provided below.',
     },
     role: { tr: 'Backend Developer', en: 'Backend Developer' },
     problem: {
-      tr: 'Akademik atama sureclerinde kriter bazli degerlendirmeyi standart, izlenebilir ve otomatik hale getirmek.',
-      en: 'Akademik atama sureclerinde kriter bazli degerlendirmeyi standart, izlenebilir ve otomatik hale getirmek.',
+      tr: 'Atama sureclerinin daha hizli ve tutarli yurutilmesi.',
+      en: 'Faster and more consistent staffing workflows.',
     },
     architecture: {
-      tr: ['Dinamik is kurali motoru', 'Admin panel kriter yonetimi', 'Otomatik puan hesaplama', 'Harici veri ile karar destek'],
-      en: ['Dinamik is kurali motoru', 'Admin panel kriter yonetimi', 'Otomatik puan hesaplama', 'Harici veri ile karar destek'],
+      tr: ['Kural bazli backend akis tasarimi'],
+      en: ['Rule-based backend workflow design'],
     },
     outcomes: {
-      tr: ['Kriter bazli degerlendirme otomatiklestirildi', 'Karar destek sureci hizlandi', 'Yonetilebilir ve moduler bir backend akis olusturuldu'],
-      en: ['Kriter bazli degerlendirme otomatiklestirildi', 'Karar destek sureci hizlandi', 'Yonetilebilir ve moduler bir backend akis olusturuldu'],
+      tr: ['Sistem sureclerinin yonetilebilirligi artirildi'],
+      en: ['System process manageability was improved'],
     },
     highlights: {
       tr: ['Laravel', 'Is kurali tasarimi', 'Otomatik degerlendirme'],
@@ -217,12 +219,13 @@ export const projects: Project[] = [
     tech: ['Laravel', 'MySQL'],
     category: 'backend',
     featured: false,
-    image: '/projeler/atanma/atanma-1.webp',
-    gallery: ['/projeler/atanma/atanma-2.webp', '/projeler/atanma/atanma-3.webp'],
-    links: {},
+    image: '/projeler/gorsel-guncellenecek.svg',
+    links: {
+      source: 'https://prodrom.com/projeler/proassign',
+    },
   },
   {
-    id: 7,
+    id: 15,
     slug: 'ai-recipe-chatbot',
     title: { tr: 'AI Recipe Chatbot', en: 'AI Recipe Chatbot' },
     subtitle: {
@@ -261,7 +264,7 @@ export const projects: Project[] = [
     links: {},
   },
   {
-    id: 8,
+    id: 10,
     slug: 'agesa-city',
     title: { tr: 'AgeSA City', en: 'AgeSA City' },
     subtitle: {
@@ -300,7 +303,7 @@ export const projects: Project[] = [
     links: {},
   },
   {
-    id: 9,
+    id: 11,
     slug: 'verial',
     title: { tr: 'VeriAl', en: 'VeriAl' },
     subtitle: {
@@ -338,7 +341,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 10,
+    id: 14,
     slug: 'surec-takip',
     title: { tr: 'Surec Takip', en: 'Surec Takip' },
     subtitle: {
@@ -375,7 +378,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 11,
+    id: 12,
     slug: 'lisansustu-egitim-bilgi-sistemi',
     title: { tr: 'Lisansustu Egitim Bilgi Sistemi', en: 'Lisansustu Egitim Bilgi Sistemi' },
     subtitle: {
@@ -412,7 +415,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 13,
+    id: 7,
     slug: 'firat-universitesi-resmi-web-sayfasi',
     title: { tr: 'Firat Universitesi Resmi Web Sayfasi', en: 'Firat Universitesi Resmi Web Sayfasi' },
     subtitle: {
@@ -449,7 +452,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 14,
+    id: 8,
     slug: 'malatya-turgut-ozal-universitesi-resmi-web-sayfasi',
     title: { tr: 'Malatya Turgut Ozal Universitesi Resmi Web Sayfasi', en: 'Malatya Turgut Ozal Universitesi Resmi Web Sayfasi' },
     subtitle: {
@@ -486,9 +489,9 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 15,
+    id: 13,
     slug: '50-yil-hatira-diplomasi',
-    title: { tr: 'Firat 50. yil hatira diplomasi', en: 'Firat 50. yil hatira diplomasi' },
+    title: { tr: 'Fırat 50. Yıl Hatıra Diplomasi', en: 'Fırat 50. Yıl Hatıra Diplomasi' },
     subtitle: {
       tr: 'Gecici icerik',
       en: 'Temporary content',
@@ -518,13 +521,15 @@ export const projects: Project[] = [
     category: 'fullstack',
     featured: false,
     image: '/projeler/hatira-diplomasi/hatira-diplomasi-1.webp',
-    gallery: ['/projeler/hatira-diplomasi/hatira-diplomasi-2.webp'],
+    gallery: [
+      '/projeler/hatira-diplomasi/hatira-diplomasi-2.webp',
+    ],
     links: {
       demo: 'https://hatiradiplomasi.firat.edu.tr/',
     },
   },
   {
-    id: 16,
+    id: 3,
     slug: 'arya-muzik',
     title: { tr: 'Arya Muzik', en: 'Arya Muzik' },
     subtitle: {
@@ -555,11 +560,18 @@ export const projects: Project[] = [
     tech: ['TBD'],
     category: 'fullstack',
     featured: false,
-    image: '/projeler/gorsel-guncellenecek.svg',
-    links: {},
+    image: '/projeler/aryamusicart/aryamusicart-1.webp',
+    gallery: [
+      '/projeler/aryamusicart/aryamusicart-2.webp',
+      '/projeler/aryamusicart/aryamusicart-3.webp',
+      '/projeler/aryamusicart/aryamusicart-4.webp',
+    ],
+    links: {
+      demo: 'https://aryamusicart.com/',
+    },
   },
   {
-    id: 17,
+    id: 4,
     slug: 'yenilmez-insaat',
     title: { tr: 'Yenilmez Insaat', en: 'Yenilmez Insaat' },
     subtitle: {
@@ -590,11 +602,13 @@ export const projects: Project[] = [
     tech: ['TBD'],
     category: 'fullstack',
     featured: false,
-    image: '/projeler/gorsel-guncellenecek.svg',
-    links: {},
+    image: '/projeler/yenilmezinsaat/yenilmezinsaat-1.webp',
+    links: {
+      demo: 'https://yenilmezinsaat.com/',
+    },
   },
   {
-    id: 18,
+    id: 9,
     slug: '2kai-yazilim-web-sayfasi',
     title: { tr: '2kai yazilim web sayfasi', en: '2kai yazilim web sayfasi' },
     subtitle: {
@@ -629,7 +643,7 @@ export const projects: Project[] = [
     links: {},
   },
   {
-    id: 19,
+    id: 16,
     slug: 'paycell-kampus-cuzdani',
     title: { tr: 'Paycell kampus cuzdani', en: 'Paycell kampus cuzdani' },
     subtitle: {
@@ -664,7 +678,7 @@ export const projects: Project[] = [
     links: {},
   },
   {
-    id: 20,
+    id: 17,
     slug: 'kombin-maker',
     title: { tr: 'Kombin maker', en: 'Kombin maker' },
     subtitle: {
@@ -699,7 +713,7 @@ export const projects: Project[] = [
     links: {},
   },
   {
-    id: 21,
+    id: 18,
     slug: 'fitlestik-kanka',
     title: { tr: 'Fitlestik kanka', en: 'Fitlestik kanka' },
     subtitle: {
@@ -734,7 +748,7 @@ export const projects: Project[] = [
     links: {},
   },
   {
-    id: 22,
+    id: 21,
     slug: 'sozluk',
     title: { tr: 'Sozluk', en: 'Sozluk' },
     subtitle: {

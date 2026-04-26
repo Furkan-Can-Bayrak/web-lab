@@ -1,10 +1,13 @@
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
-import { projects } from '../../data/projects'
+import { projects as allProjects } from '../../data/projects'
 import { useLocale } from '../../i18n/LocaleContext'
+import { useMemo } from 'react'
 
 export default function ProjectList() {
   const { locale } = useLocale()
+  const sortedProjects = useMemo(() => [...allProjects].sort((a, b) => a.id - b.id), [])
+
   return (
     <section id="projects" className="py-16 px-4">
       <div className="max-w-6xl mx-auto space-y-6">
@@ -25,7 +28,7 @@ export default function ProjectList() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {projects.map((project, idx) => (
+          {sortedProjects.map((project, idx) => (
             <motion.article
               key={project.id}
               initial={{ opacity: 0, y: 18 }}
